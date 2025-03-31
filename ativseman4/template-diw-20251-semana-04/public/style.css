@@ -1,0 +1,54 @@
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .main-content {
+        margin-left: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .search-bar {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .destination, .trip {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .menu li {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}

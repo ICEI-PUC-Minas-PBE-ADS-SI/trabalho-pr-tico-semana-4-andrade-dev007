@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Turístico</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Guia Turístico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Buscar destinos...">
+                    <button class="btn btn-light" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><button class="btn btn-light">Contato</button></li>
+                    <li class="nav-item"><button class="btn btn-light">Sobre</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="d-none d-md-block bg-light position-fixed vh-100 p-3" style="width: 250px; margin-top: 56px;">
+        <ul class="list-group">
+            <li class="list-group-item">Início</li>
+            <li class="list-group-item">Destinos Populares</li>
+            <li class="list-group-item">Passeios e Atividades</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-4" style="margin-left: 270px;">
+        <section class="content-section">
+            <div class="text-center">
+                <img src="https://picsum.photos/id/1015/400/200" class="img-fluid rounded shadow" alt="Destino em destaque">
+            </div>
+
+            <!-- Destinos Recomendados -->
+            <section class="recommended mt-4">
+                <h2 class="text-success">Destinos Recomendados</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1020/200/150" class="card-img-top" alt="Destino turístico">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Praia dos Sonhos</h5>
+                                <p class="card-text">Um paraíso tropical com águas cristalinas e areia branca.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1035/200/150" class="card-img-top" alt="Destino turístico">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Montanhas Encantadas</h5>
+                                <p class="card-text">Explore trilhas e paisagens deslumbrantes nas alturas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1041/200/150" class="card-img-top" alt="Destino turístico">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Ilha do Sol</h5>
+                                <p class="card-text">Um refúgio exótico com vistas incríveis e águas cristalinas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1050/200/150" class="card-img-top" alt="Destino turístico">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vale Mágico</h5>
+                                <p class="card-text">Descubra cachoeiras escondidas e trilhas encantadoras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Roteiros Recentes -->
+            <section class="recent-trips mt-4">
+                <h2 class="text-success">Roteiros Recentes</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1045/200/150" class="card-img-top" alt="Roteiro turístico">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Aventura na Floresta</h5>
+                                <p class="card-text">Descubra a beleza das florestas tropicais com guias especializados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3 mt-4">
+        <form class="subscribe-form d-flex justify-content-center gap-2">
+            <label for="email">Receba novidades:</label>
+            <input type="email" id="email" class="form-control w-25" placeholder="Digite seu e-mail">
+            <button type="submit" class="btn btn-light">Cadastrar</button>
+        </form>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
